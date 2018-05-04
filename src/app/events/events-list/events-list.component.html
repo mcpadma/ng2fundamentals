@@ -1,0 +1,19 @@
+<!--<p>
+  events-list works!
+</p>
+<h1>akdsjflksdjfksf</h1>-->
+<div>
+  <h1>Upcoming Angular Events</h1>
+  <hr/>
+  <div class="row">
+    <div class ="col-md-5" *ngFor =" let event of events">
+      <app-event-thumbnail  [event] = "event" ></app-event-thumbnail>
+    </div>
+  <!--<app-event-thumbnail [event] = "event1" (eventClick) = "handleEventClicked($event)" ></app-event-thumbnail>-->
+   <!--<app-event-thumbnail #thumbnail [event] = "event1" ></app-event-thumbnail>-->
+    <!--#thumbanail is the instance variable-->
+   <!--<h3>{{thumbnail.someProperty}}</h3>
+   <button class="btn btn-primary" (click)= "thumbnail.logFoo()">Log me some foo</button>-->
+   <!--above two lines are for component interaction with instance variables-->
+  </div>
+</div>
